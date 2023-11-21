@@ -1,0 +1,442 @@
+:root {
+  --colour-primary: rgb(0, 150, 230);
+  --colour-secondary: rgb(0, 50, 110);
+  --colour-tertiary: rgb(90, 130, 155);
+  --font-primary: 'Bakbak-One';
+  --font-secondary: 'DM-Sans';
+  --outline-width-primary: 8px;
+  --outline-offset-primary: -4px;
+}
+
+@font-face {
+  font-family: DM-Sans;
+  src: url('../resources/DM_Sans/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Bakbak-One;
+  src: url('../resources/Bakbak_One/BakbakOne-Regular.ttf');
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header {
+  background-color: rgb(0, 150, 230);
+  outline: 10px solid;
+  outline-color: rgb(0, 50, 110);
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+}
+
+
+
+#byteboard-title-image {
+  height: 100px;
+  width: 500px;
+
+}
+
+.menu {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: blue;
+  border: black;
+}
+
+.menuDisplay {
+  margin-top: 3em;
+}
+
+.footer {
+  background-color: var(--colour-primary);
+  outline: var(--outline-width-primary) solid;
+  outline-color: var(--colour-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  vertical-align: bottom;
+  text-align: center;
+  vertical-align: bottom;
+  height: 200px;
+
+  padding: 3rem 40px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.footer-title,
+.footer-copyright,
+.footer-contact {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+.footer-contact {
+  line-height: 1.5;
+}
+
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 400px;
+  max-height: 300px;
+  background-color: grey;
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px)
+}
+
+.card-img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.description {
+  background-color: rgb(0, 150, 230);
+  outline: 10px solid;
+  outline-color: rgb(0, 50, 110);
+  max-width: 500px;
+  height: 200px;
+  margin: 12em;
+
+
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40em;
+  background-color: rgb(0, 150, 230);
+  outline: 10px solid;
+  outline-color: rgb(0, 50, 110);
+  max-width: 500px;
+  height: 300px;
+  margin-bottom: 3em;
+
+}
+
+.post {
+  background-color: rgb(0, 150, 230);
+  outline: 10px solid;
+  outline-color: rgb(0, 50, 110);
+  width: 500px;
+  max-height: 500px;
+
+  margin-left: 5em;
+  margin-right: 5em;
+
+
+}
+
+.users
+{
+
+margin-left: 5em;
+width: 30em;
+
+}
+
+.login {
+  background-color: rgb(0, 150, 230);
+  outline: 10px solid;
+  outline-color: rgb(0, 50, 110);
+  max-width: 200px;
+  max-height: 400px;
+  margin-left: 20em;
+  margin-bottom: 3em;
+}
+
+#home-title {
+  padding-bottom: 4rem;
+}
+
+/*===================== FORUM STYLES =====================*/
+.post-summary-container {
+  text-align: left;
+  display: inline;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.6rem;
+
+  outline-width: var(--outline-width-primary);
+  outline-color: var(--colour-secondary);
+  outline-style: solid;
+  outline-offset: var(--outline-offset-primary);
+}
+
+.post-summary {
+  display: inline !important;
+  padding-right: 1rem;
+}
+
+.post-summary-item {
+  color: var(--colour-tertiary);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.post-summary-desc {
+  color: var(--colour-tertiary);
+  padding-top: 0.4rem;
+  padding-bottom: 0rem;
+}
+
+.post-summary-comments {
+  margin-left: 3rem;
+}
+
+.post-vote-button {
+  width: 1rem;
+  height: 2rem;
+  background: transparent;
+  margin-bottom: 1.4rem;
+  align-items: center;
+}
+
+.post-vote-img {
+  width: 2rem !important;
+  align-self: center !important;
+}
+
+.post-vote-score {
+  color: var(--colour-tertiary);
+  font-family: var(--font-secondary);
+  font-size: 2.2rem;
+  display: inline !important;
+  padding-left: 1rem;
+  padding-right: -0.5rem;
+}
+
+.topic-container {
+  display: inline !important;
+}
+
+.post-container {
+  text-align: left;
+  display: inline;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.6rem;
+}
+
+.post-real {
+  display: inline !important;
+  padding-right: 3rem;
+}
+
+.post-item {
+  color: var(--colour-tertiary);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.post-desc {
+  color: var(--colour-tertiary);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--font-secondary);
+}
+
+.post-vote-button {
+  width: 1rem;
+  height: 2rem;
+  background: transparent;
+  margin-bottom: 1.4rem;
+  align-items: center;
+}
+/*======== FORUM STYLES END ========*/
+
+.comments-container {
+  text-align: left;
+  display: inline;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.6rem;
+
+  outline-width: var(--outline-width-primary);
+  outline-color: var(--colour-secondary);
+  outline-style: solid;
+  outline-offset: var(--outline-offset-primary);
+}
+
+.comment-container {
+  text-align: left;
+  padding-left: 1rem;
+
+  outline-width: var(--outline-width-secondary);
+  outline-color: var(--colour-secondary);
+  outline-style: solid;
+  outline-offset: var(--outline-offset-primary);
+}
+
+.comment {
+  display: inline !important;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.comment-author {
+  font-size: 2.2rem !important;
+}
+
+.comment-desc {
+  display: block  !important;
+  color: var(--colour-tertiary);
+  font-family: var(--font-secondary);
+}
+
+.comment-item {
+  color: var(--colour-tertiary);
+  font-family: var(--font-secondary);
+  padding-left: 2rem;
+}
+
+.post-edit-button {
+  background-color: var(--colour-primary);
+  color: white;
+  font-family: var(--font-primary);
+  border-radius: 1rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  margin-right: 2rem;
+}
+
+.navbutton {
+  border: "none";
+  color: white;
+  padding: "0.4rem 32px";
+  text-align: "center";
+  text-decoration: "none";
+  display: "inline-block";
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  border-radius: 1rem;
+}
+
+.navbutton-active {
+  background-color: var(--colour-secondary);
+}
+
+.navbutton-inactive {
+  background-color: var(--colour-primary);
+}
+
+
+.home {
+  display: flex;
+  flex-direction: row;
+justify-content: space-between
+}
+
+p {
+  color: var(--colour-secondary);
+  font-family: var(--font-secondary);
+}
+
+h1 {
+  color: var(--colour-secondary);
+  font-family: var(--font-primary);
+  font-size: 4.5rem !important;
+}
+
+h2 {
+  color: var(--colour-secondary);
+  font-family: var(--font-primary);
+  font-size: 2.5rem !important;
+}
+
+h3 {
+  color: var(--colour-secondary);
+  font-family: var(--font-primary);
+}
+
+h4 {
+  color: var(--colour-secondary);
+  font-family: var(--font-primary);
+}
+
+div {
+  display: grid;
+  text-align: center;
+}
